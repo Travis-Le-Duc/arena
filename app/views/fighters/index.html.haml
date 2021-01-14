@@ -1,0 +1,6 @@
+%h1 Fighters
+%ul
+  - @fighters.each do |fighter|
+    %li= link_to fighter.name, fighter
+
+= link_to "Create a fighter", new_fighter_path

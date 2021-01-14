@@ -1,0 +1,7 @@
+%h1 #{@fighter.name} with health: #{@fighter.health} and attack: #{@fighter.attack}
+
+%div= link_to "Edit", edit_fighter_path(@fighter)
+%div= link_to "Delete", fighter_path(@fighter),
+  method: :delete,
+  data: { confirm: "Confirm to delete the fighter?" }
+%div= link_to "Go back", fighters_path
