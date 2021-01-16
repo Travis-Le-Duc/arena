@@ -35,12 +35,12 @@ RSpec.describe Fighter, type: :model do
 		expect(fighter).to_not be_valid
 	end
 
-	it "is not dead if health > 0" do
-		expect(fighter.is_dead).to be false
+	it "is survivor if health > 0" do
+		expect(fighter.is_survivor).to be true
 	end
 
 	it "is dead if health is 0" do
 		fighter.health = 0
-		expect(fighter.is_dead).to be true
+		expect(fighter.is_survivor).to be false
 	end
 end
