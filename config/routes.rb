@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 	resources :fighters
+	resources 'duels', only: [:index, :show, :new, :create]
 end

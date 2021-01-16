@@ -1,0 +1,13 @@
+%h1 Organize a duel
+
+%div 
+  Choose two fighters that will face each other
+  = form_tag(@duel, :method => "post") do
+    %div
+    Fighter 1:
+    = select_tag(:fighter_id1, options_for_select(@fighters)) 
+    Fighter 2:
+    = select_tag(:fighter_id2, options_for_select(@fighters))
+    = submit_tag("Go!")
+
+%div= link_to "Go back", root_path

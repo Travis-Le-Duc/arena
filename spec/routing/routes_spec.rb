@@ -51,3 +51,25 @@ describe "routing for fighters" do
 		)
 	end
 end
+
+describe "routing for duels" do
+	it "routes /duels to the index action" do
+		expect(get("/duels")).to route_to("duels#index")
+	end
+
+	it "routes /duels/:id to the show action" do
+		expect(get("/duels/2")).to route_to(
+			controller: "duels",
+			action:			"show",
+			id:					"2"
+		)
+	end
+
+	it "routes /duels/new to the new action" do
+		expect(get("/duels/new")).to route_to("duels#new")
+	end
+
+	it "routes /duels to the create action" do
+		expect(post("/duels")).to route_to("duels#create")
+	end
+end
