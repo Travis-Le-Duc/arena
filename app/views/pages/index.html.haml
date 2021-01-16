@@ -1,7 +1,5 @@
-%h1
-  Welcome to the game Arena!
+%h1 Welcome to the game Arena!
 
-%div
-  Two fighters will face each other:
-  Fighter 1
-  Fighter 2
+%div= link_to "Organize a duel", new_duel_path
+%div= link_to "See available fighters", fighters_path
+%div= link_to "See history of duels", duels_path
