@@ -1,9 +1,9 @@
-%h1 Duel #{@duel.id} - #{@duel.winner.name} VS #{@duel.loser.name}
+%h1 Duel #{@duel.id} - #{@duel.winner.name} VS #{@loser.name}
 %div The winner is #{@duel.winner.name}!
-%div The loser is #{@duel.loser.name}.
+%div The loser is #{@loser.name}.
 %div 
   Summary of the duel:
   - @duel.logs.each do |log|
-    %li=log
+    %div= log
 
 %div= link_to "Go back", duels_path

@@ -1,6 +1,6 @@
 %h1 History of duels
 %ul
   - @duels.each do |duel|
-    %li= link_to "Duel #{duel.id} - #{duel.winner.name} VS #{duel.loser.name}", duel
+    %li= link_to "Duel #{duel.id} - #{duel.fighter1.name} VS #{duel.fighter2.name} - Winner is: #{duel.winner.name}", duel
 
 %div= link_to "Go back", root_path
