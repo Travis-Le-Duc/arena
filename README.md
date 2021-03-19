@@ -1,7 +1,3 @@
-### 0. ~~Forker~~ Cloner ce repo
-
-Pour commencer, il faudra cloner (ne *PAS* forker) ce repo afin d'y ajouter tes modifications.
-
 ### 1. Page d'accueil statique  :heavy_check_mark:
 
 C'est l'accueil de l'arène, d'où nous pourrons lancer les combats.  
